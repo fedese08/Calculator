@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(22, 22, 22);
+
+
+}
+
+.calculator {
+    position: relative;
+    width: 350px;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 20px rgba(37, 37, 37, 0.733);
+    border-radius: 10px;
+    background: rgb(62, 62, 62);
+}
+
+.calculator .buttons {
+    position: relative;
+    display: grid;
+}
+
+.calculator .buttons #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    text-align: end;
+    color: #63e8c3;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+
+.calculator .buttons span {
+    position: relative;
+    padding: 10px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #63e8c3;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #666;
+}
+
+.calculator .buttons span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+    color: #63e8c3;
+}
+
+.calculator .buttons span#clear {
+    grid-column: span 2;
+    background: #13be9f;
+    color: #f2f2f2;
+    
+}
+
+.calculator .buttons span#plus {
+    grid-row: span 2;
+    
+}
+
+.calculator .buttons span#equal {
+    grid-column: span 2;
+    background: #13be9f;
+    color: #f2f2f2;
+    
+}
+
+.calculator .buttons span#clear,
+.calculator .buttons span#plus,
+.calculator .buttons span#equal {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
